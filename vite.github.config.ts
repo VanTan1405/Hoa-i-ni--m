@@ -2,4 +2,4 @@
 import {defineConfig} from "vite";
 import react from "@vitejs/plugin-react";
 import path from "node:path";
-export default defineConfig({base:"./",plugins:[react()],resolve:{alias:{"@":path.resolve(".")}},build:{outDir:"docs",emptyOutDir:true},publicDir:"public"});
+export default defineConfig({root:"github",base:"./",plugins:[react()],resolve:{alias:{"@":path.resolve(".")}},build:{outDir:"../docs",emptyOutDir:true},publicDir:"../public"});
